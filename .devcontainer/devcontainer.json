@@ -16,7 +16,8 @@
 		8080
 	],
 	"features": {
-		"ghcr.io/devcontainers/features/git:1": {}
+		"ghcr.io/devcontainers/features/git:1": {},
+		"ghcr.io/devcontainers/features/node:1": {}
 	},
 	"runArgs": [
 		"--name",
@@ -24,6 +25,14 @@
 	],
 	"remoteEnv": {
 		"XDEBUG_CONFIG": "client_port=9003"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"esbenp.prettier-vscode",
+				"dbaeumer.vscode-eslint"
+			]
+		}
 	}
 
 	// Use 'postCreateCommand' to run commands after the container is created.
